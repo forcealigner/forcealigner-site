@@ -25,17 +25,26 @@
             color: var(--dark-gray);
         }
 
+        /* HEADER */
         header {
             background: var(--primary-blue);
             color: var(--white);
-            padding: 20px 40px;
+            padding: 15px 30px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
         }
         nav a {
             color: var(--white);
-            margin-left: 25px;
             text-decoration: none;
             font-weight: 600;
             font-family: 'Montserrat', sans-serif;
@@ -44,7 +53,14 @@
             color: var(--cyan);
         }
 
-        /* HERO COM BANNER SEM TEXTO */
+        /* MENU HAMBURGER */
+        #menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* HERO COM BANNER E TEXTO */
         .hero {
             position: relative;
             background: url('assets/banner.jpeg') no-repeat center center;
@@ -58,6 +74,37 @@
             width: 100%;
             height: 100%;
             background: rgba(10, 61, 98, 0.3);
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            max-width: 90%;
+        }
+        .hero-text h1 {
+            font-size: 42px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 15px;
+        }
+        .hero-text p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        .hero-btn {
+            padding: 15px 30px;
+            background-color: var(--secondary-blue);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .hero-btn:hover {
+            background-color: var(--cyan);
+            transform: translateY(-3px);
         }
 
         /* SEÇÕES */
@@ -146,6 +193,21 @@
             .hero {
                 height: 500px;
             }
+            nav {
+                display: none; /* esconde nav no celular */
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background-color: var(--primary-blue);
+                padding: 10px 0;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            #menu-toggle {
+                display: block;
+                color: #fff;
+            }
         }
         @media (max-width: 480px) {
             .section h3 {
@@ -157,6 +219,16 @@
             .hero {
                 height: 400px;
             }
+            .hero-text h1 {
+                font-size: 24px;
+            }
+            .hero-text p {
+                font-size: 14px;
+            }
+            .hero-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
             .whatsapp-float {
                 padding: 10px 15px;
                 font-size: 14px;
@@ -167,20 +239,27 @@
 <body>
 
 <header>
-    <nav>
+    <img src="assets/logo.png" alt="ForceAligner">
+    <nav id="navbar">
         <a href="#">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
         <a href="#">Contato</a>
     </nav>
+    <div id="menu-toggle">☰</div>
 </header>
 
-<!-- HERO COM BANNER -->
+<!-- HERO COM BANNER E TEXTO -->
 <section class="hero">
     <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1>Transforme Seu Sorriso com Tecnologia Digital</h1>
+        <p>Alinhadores personalizados, confortáveis e com resultados previsíveis.</p>
+        <a href="https://wa.me/5514998840772" class="hero-btn" target="_blank">Agende Agora</a>
+    </div>
 </section>
 
-<!-- SEÇÃO SOBRE COM INFORMAÇÕES E PERGUNTAS FREQUENTES LADO A LADO -->
+<!-- SEÇÃO SOBRE -->
 <section class="section" id="sobre">
     <h3>Sobre a ForceAligner</h3>
     <p>
@@ -222,14 +301,30 @@
     </div>
 </section>
 
-<!-- SEÇÃO SERVIÇOS -->
+<!-- SEÇÃO SERVIÇOS COM DEPOIMENTOS HUMANIZADOS -->
 <section class="section" id="servicos">
     <h3>Serviços ForceAligner</h3>
     <div class="services">
-        <!-- Pacientes -->
+        <!-- Paciente 1 -->
         <div class="card">
-            <h4>Para Pacientes</h4>
-            <p>Oferecemos alinhadores odontológicos modernos, transparentes e personalizados, desenvolvidos para corrigir o posicionamento dos dentes de forma confortável e discreta.</p>
+            <h4>Vitoria</h4>
+            <p>"Sempre quis corrigir meu sorriso sem precisar do aparelho fixo. Os alinhadores da ForceAligner foram confortáveis e discretos, adorei o resultado!"</p>
+            <p><strong>👉 Agende sua avaliação no WhatsApp</strong></p>
+            <p><strong>WhatsApp:</strong> (14) 99884-0772</p>
+        </div>
+
+        <!-- Paciente 2 -->
+        <div class="card">
+            <h4>Natacha</h4>
+            <p>"O tratamento foi rápido e confortável. Pude comer normalmente e a higiene bucal ficou super fácil. Recomendo a ForceAligner!"</p>
+            <p><strong>👉 Agende sua avaliação no WhatsApp</strong></p>
+            <p><strong>WhatsApp:</strong> (14) 99884-0772</p>
+        </div>
+
+        <!-- Paciente 3 -->
+        <div class="card">
+            <h4>Diego</h4>
+            <p>"Achei incrível como tudo é planejado digitalmente. O acompanhamento foi ótimo e meu sorriso ficou perfeito. Valeu cada investimento!"</p>
             <p><strong>👉 Agende sua avaliação no WhatsApp</strong></p>
             <p><strong>WhatsApp:</strong> (14) 99884-0772</p>
         </div>
@@ -252,6 +347,15 @@
 <a href="https://wa.me/5514998840772" class="whatsapp-float" target="_blank">
     💬 Fale no WhatsApp
 </a>
+
+<!-- JS MENU HAMBURGER -->
+<script>
+const toggle = document.getElementById('menu-toggle');
+const nav = document.getElementById('navbar');
+toggle.addEventListener('click', () => {
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+});
+</script>
 
 </body>
 </html>
