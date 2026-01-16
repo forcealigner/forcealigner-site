@@ -5,28 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Force Aligner | Soluções Profissionais</title>
     <meta name="description" content="Force Aligner - Alinhadores odontológicos personalizados com tecnologia digital, conforto e resultados previsíveis. Agende sua avaliação no WhatsApp.">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        /* VARIÁVEIS DE CORES */
+        :root {
+            --primary-blue: #0a3d62;
+            --secondary-blue: #1e90ff;
+            --cyan: #00d4ff;
+            --dark-gray: #2c3e50;
+            --light-gray: #f8fbfd;
+            --white: #ffffff;
+        }
+
         body {
             margin: 0;
-            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-            background-color: #f8fbfd;
-            color: #2c3e50;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
         }
+
         header {
-            background: #0a3d62;
-            color: #fff;
+            background: var(--primary-blue);
+            color: var(--white);
             padding: 20px 40px;
             display: flex;
             justify-content: flex-end;
+            align-items: center;
         }
         nav a {
-            color: #fff;
-            margin-left: 20px;
+            color: var(--white);
+            margin-left: 25px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: var(--cyan);
         }
 
         /* HERO COM BANNER SEM TEXTO */
@@ -42,9 +57,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(11,28,45,0.3); /* overlay suave */
+            background: rgba(10, 61, 98, 0.3);
         }
 
+        /* SEÇÕES */
         .section {
             padding: 60px 40px;
             max-width: 1100px;
@@ -54,6 +70,8 @@
             font-size: 32px;
             margin-bottom: 20px;
             text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-blue);
         }
         .section p {
             font-size: 18px;
@@ -61,6 +79,8 @@
             margin: 0 auto 30px auto;
             text-align: center;
         }
+
+        /* CARDS */
         .services {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -68,14 +88,25 @@
             margin-top: 40px;
         }
         .card {
-            background: #fff;
+            background: var(--white);
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .card h4 {
+            color: var(--secondary-blue);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* FOOTER */
         footer {
-            background: #0a3d62;
-            color: #fff;
+            background: var(--primary-blue);
+            color: var(--white);
             text-align: center;
             padding: 20px;
             font-size: 14px;
@@ -95,11 +126,13 @@
             gap: 10px;
             font-weight: bold;
             text-decoration: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
             z-index: 1000;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .whatsapp-float:hover {
             background-color: #1ebe5d;
+            transform: translateY(-3px);
         }
 
         /* RESPONSIVIDADE */
@@ -142,7 +175,7 @@
     </nav>
 </header>
 
-<!-- HERO COM BANNER SOMENTE -->
+<!-- HERO COM BANNER -->
 <section class="hero">
     <div class="hero-overlay"></div>
 </section>
@@ -181,6 +214,10 @@
         <div class="card">
             <h4>Vale a pena investir?</h4>
             <p>Sim. Para quem busca conforto, discrição, tecnologia e resultados previsíveis, os alinhadores representam um investimento em saúde, estética e qualidade de vida a longo prazo.</p>
+        </div>
+        <div class="card">
+            <h4>É fácil de retirar?</h4>
+            <p>Sim. Os alinhadores são totalmente removíveis, permitindo comer sem restrições e realizar higiene bucal completa, garantindo praticidade, conforto e manutenção da saúde dos dentes durante o tratamento.</p>
         </div>
     </div>
 </section>
