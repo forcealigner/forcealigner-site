@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Force Aligner | Soluções Profissionais</title>
+    <meta name="description" content="Force Aligner - Alinhadores odontológicos personalizados com tecnologia digital, conforto e resultados previsíveis. Agende sua avaliação no WhatsApp.">
     <style>
         body {
             margin: 0;
@@ -19,9 +20,9 @@
             justify-content: space-between;
             align-items: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
+        header .logo {
+            height: 50px;
+            width: auto;
         }
         nav a {
             color: #fff;
@@ -33,9 +34,8 @@
             text-decoration: underline;
         }
         .hero {
-            background: linear-gradient(rgba(11,28,45,0.85), rgba(11,28,45,0.85)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+            background: linear-gradient(rgba(11,28,45,0.85), rgba(11,28,45,0.85)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') no-repeat center center;
             background-size: cover;
-            background-position: center;
             color: #fff;
             padding: 100px 40px;
             text-align: center;
@@ -90,7 +90,7 @@
             padding: 20px;
             font-size: 14px;
         }
-            .whatsapp-float {
+        .whatsapp-float {
             position: fixed;
             bottom: 20px;
             right: 20px;
@@ -109,12 +109,20 @@
         .whatsapp-float:hover {
             background-color: #1ebe5d;
         }
+
+        /* Responsividade para WhatsApp flutuante */
+        @media (max-width: 480px) {
+            .whatsapp-float {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Force Aligner</h1>
+    <img src="assets/logo.png" alt="Force Aligner Logo" class="logo">
     <nav>
         <a href="#">Início</a>
         <a href="#">Sobre</a>
@@ -126,7 +134,9 @@
 <section class="hero">
     <h2>Alinhadores Odontológicos com Precisão e Tecnologia</h2>
     <p>A Force Aligner é especializada em alinhadores odontológicos modernos e contenções ortodônticas, unindo tecnologia, conforto e eficiência para transformar sorrisos com segurança, previsibilidade e acompanhamento profissional.</p>
-    <button>Agende sua Avaliação no WhatsApp</button>
+    <a href="https://wa.me/5514998840772" target="_blank">
+        <button>Agende sua Avaliação no WhatsApp</button>
+    </a>
 </section>
 
 <section class="section">
@@ -292,6 +302,7 @@
     © 2026 Force Aligner — Todos os direitos reservados
 </footer>
 
+<!-- Botão flutuante WhatsApp -->
 <a href="https://wa.me/5514998840772" class="whatsapp-float" target="_blank">
     💬 Fale no WhatsApp
 </a>
