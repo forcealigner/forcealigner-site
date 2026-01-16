@@ -34,9 +34,6 @@
             align-items: center;
             flex-wrap: wrap;
         }
-        header img {
-            height: 50px;
-        }
         nav {
             display: flex;
             gap: 25px;
@@ -51,15 +48,13 @@
         nav a:hover {
             color: var(--cyan);
         }
-
-        /* MENU HAMBURGER */
         #menu-toggle {
             display: none;
             font-size: 28px;
             cursor: pointer;
         }
 
-        /* HERO COM TEXTO NA PARTE INFERIOR */
+        /* HERO */
         .hero {
             position: relative;
             background: url('assets/banner.jpeg') no-repeat center center;
@@ -74,28 +69,8 @@
             height: 100%;
             background: rgba(10, 61, 98, 0.3);
         }
-        .hero-text {
-            position: absolute;
-            text-align: center;
-            color: #fff;
-            max-width: 90%;
-        }
-        .hero-text.hero-bottom {
-            top: auto;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .hero-text h1 {
-            font-size: 42px;
-            font-family: 'Montserrat', sans-serif;
-            margin-bottom: 15px;
-        }
-        .hero-text p {
-            font-size: 20px;
-        }
 
-        /* BOTÃO AGENDAR */
+        /* BOTÃO AGENDAR FORA DO BANNER */
         .hero-btn {
             padding: 15px 30px;
             background-color: var(--secondary-blue);
@@ -205,8 +180,6 @@
             .section h3 { font-size: 24px; }
             .section p { font-size: 14px; }
             .hero { height: 400px; }
-            .hero-text h1 { font-size: 24px; }
-            .hero-text p { font-size: 14px; }
             .hero-btn { padding: 10px 20px; font-size: 14px; }
             .whatsapp-float { padding: 10px 15px; font-size: 14px; }
         }
@@ -215,7 +188,6 @@
 <body>
 
 <header>
-    <img src="assets/logo.png" alt="ForceAligner">
     <nav id="navbar">
         <a href="#">Início</a>
         <a href="#sobre">Sobre</a>
@@ -225,17 +197,19 @@
     <div id="menu-toggle">☰</div>
 </header>
 
-<!-- HERO COM TEXTO NA PARTE INFERIOR -->
+<!-- HERO SEM TEXTO -->
 <section class="hero">
     <div class="hero-overlay"></div>
-    <div class="hero-text hero-bottom">
-        <h1>Transforme Seu Sorriso com Tecnologia Digital</h1>
-        <p>Alinhadores personalizados, confortáveis e com resultados previsíveis.</p>
-    </div>
 </section>
 
-<!-- BOTÃO AGENDAR FORA DO BANNER -->
+<!-- TEXTO + BOTÃO CENTRALIZADOS ABAIXO DO BANNER -->
 <div style="text-align:center; margin: 30px 0;">
+    <h1 style="font-family: 'Montserrat', sans-serif; color: var(--primary-blue); margin-bottom:15px;">
+        Transforme Seu Sorriso com Tecnologia Digital
+    </h1>
+    <p style="font-size:18px; margin-bottom:20px;">
+        Alinhadores personalizados, confortáveis e com resultados previsíveis.
+    </p>
     <a href="https://wa.me/5514998840772" class="hero-btn" target="_blank">Agende Agora</a>
 </div>
 
