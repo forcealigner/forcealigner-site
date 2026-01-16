@@ -1,189 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForceAligner | Soluções Profissionais</title>
-    <meta name="description" content="ForceAligner - Alinhadores odontológicos personalizados com tecnologia digital, conforto e resultados previsíveis. Agende sua avaliação no WhatsApp.">
-    <!-- Fontes Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-blue: #0a3d62;
-            --secondary-blue: #1e90ff;
-            --cyan: #00d4ff;
-            --dark-gray: #2c3e50;
-            --light-gray: #f8fbfd;
-            --white: #ffffff;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--light-gray);
-            color: var(--dark-gray);
-        }
-
-        /* HEADER */
-        header {
-            background: var(--primary-blue);
-            color: var(--white);
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 600;
-            font-family: 'Montserrat', sans-serif;
-        }
-        nav a:hover {
-            color: var(--cyan);
-        }
-        #menu-toggle {
-            display: none;
-            font-size: 28px;
-            cursor: pointer;
-        }
-
-        /* HERO */
-        .hero {
-            position: relative;
-            background: url('assets/banner.jpeg') no-repeat center center;
-            background-size: cover;
-            height: 600px;
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(10, 61, 98, 0.3);
-        }
-
-        /* BOTÃO AGENDAR FORA DO BANNER */
-        .hero-btn {
-            padding: 15px 30px;
-            background-color: var(--secondary-blue);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .hero-btn:hover {
-            background-color: var(--cyan);
-            transform: translateY(-3px);
-        }
-
-        /* SEÇÕES */
-        .section {
-            padding: 60px 40px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        .section h3 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-            color: var(--primary-blue);
-        }
-        .section p {
-            font-size: 18px;
-            max-width: 900px;
-            margin: 0 auto 30px auto;
-            text-align: center;
-        }
-
-        /* CARDS */
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-        .card h4 {
-            color: var(--secondary-blue);
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* FOOTER */
-        footer {
-            background: var(--primary-blue);
-            color: var(--white);
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        /* Botão WhatsApp flutuante */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: #fff;
-            border-radius: 50px;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: bold;
-            text-decoration: none;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-            z-index: 1000;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .whatsapp-float:hover {
-            background-color: #1ebe5d;
-            transform: translateY(-3px);
-        }
-
-        /* RESPONSIVIDADE */
-        @media (max-width: 768px) {
-            .section h3 { font-size: 28px; }
-            .section p { font-size: 16px; }
-            .hero { height: 500px; }
-            nav {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                text-align: center;
-                background-color: var(--primary-blue);
-                padding: 10px 0;
-            }
-            nav a { margin: 10px 0; }
-            #menu-toggle { display: block; color: #fff; }
-        }
-        @media (max-width: 480px) {
-            .section h3 { font-size: 24px; }
-            .section p { font-size: 14px; }
-            .hero { height: 400px; }
-            .hero-btn { padding: 10px 20px; font-size: 14px; }
-            .whatsapp-float { padding: 10px 15px; font-size: 14px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForceAligner | Soluções Profissionais</title>
+<meta name="description" content="ForceAligner - Alinhadores odontológicos personalizados com tecnologia digital, conforto e resultados previsíveis. Agende sua avaliação no WhatsApp.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-blue: #0a3d62;
+        --secondary-blue: #1e90ff;
+        --cyan: #00d4ff;
+        --dark-gray: #2c3e50;
+        --light-gray: #f8fbfd;
+        --white: #ffffff;
+    }
+    body { margin:0; font-family:'Roboto',sans-serif; background-color:var(--light-gray); color:var(--dark-gray); }
+    header { background:var(--primary-blue); color:var(--white); padding:20px 40px; display:flex; justify-content:flex-end; align-items:center; }
+    nav a { color:var(--white); margin-left:25px; text-decoration:none; font-weight:600; font-family:'Montserrat',sans-serif; }
+    nav a:hover { color:var(--cyan); }
+    #menu-toggle { display:none; cursor:pointer; font-size:24px; margin-left:20px; }
+    .hero { position: relative; background: url('assets/banner.jpeg') no-repeat center center; background-size: cover; height:600px; display:flex; align-items:flex-end; justify-content:center; }
+    .hero-overlay { position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(10,61,98,0.3); }
+    .hero-button { position:relative; margin-bottom:30px; background-color:var(--secondary-blue); color:white; padding:15px 30px; font-weight:bold; text-decoration:none; border-radius:50px; transition:0.3s; }
+    .hero-button:hover { background-color:var(--cyan); }
+    .section { padding:60px 40px; max-width:1100px; margin:auto; }
+    .section h3 { font-size:32px; margin-bottom:20px; text-align:center; font-family:'Montserrat',sans-serif; color:var(--primary-blue); }
+    .section p { font-size:18px; max-width:900px; margin:0 auto 30px auto; text-align:center; }
+    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; margin-top:40px; }
+    .card { background:var(--white); padding:30px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); transition:transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform:translateY(-8px); box-shadow:0 10px 25px rgba(0,0,0,0.15); }
+    .card h4 { color:var(--secondary-blue); font-family:'Montserrat',sans-serif; }
+    footer { background:var(--primary-blue); color:var(--white); text-align:center; padding:20px; font-size:14px; }
+    .whatsapp-float { position:fixed; bottom:20px; right:20px; background-color:#25d366; color:#fff; border-radius:50px; padding:15px 20px; display:flex; align-items:center; gap:10px; font-weight:bold; text-decoration:none; box-shadow:0 6px 15px rgba(0,0,0,0.2); z-index:1000; transition:0.3s; }
+    .whatsapp-float:hover { background-color:#1ebe5d; transform:translateY(-3px); }
+    a { cursor:pointer; }
+    @media(max-width:768px){ .section h3{ font-size:28px; } .section p{ font-size:16px; } .hero{ height:500px; } #menu-toggle{ display:block; } nav{ display:none; flex-direction:column; background:var(--primary-blue); position:absolute; top:60px; right:40px; width:200px; border-radius:8px; padding:10px; } nav.show{ display:flex; } }
+    @media(max-width:480px){ .section h3{ font-size:24px; } .section p{ font-size:14px; } .hero{ height:400px; } .whatsapp-float{ padding:10px 15px; font-size:14px; } }
+</style>
 </head>
 <body>
 
@@ -192,40 +46,22 @@
         <a href="#">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
-        <a href="#">Contato</a>
+        <a href="#contato">Contato</a>
     </nav>
     <div id="menu-toggle">☰</div>
 </header>
 
-<!-- HERO SEM TEXTO -->
+<!-- HERO COM BANNER -->
 <section class="hero">
     <div class="hero-overlay"></div>
+    <a href="https://wa.me/5514998840772" class="hero-button" target="_blank">Agende Agora</a>
 </section>
-
-<!-- TEXTO + BOTÃO CENTRALIZADOS ABAIXO DO BANNER -->
-<div style="text-align:center; margin: 30px 0;">
-    <h1 style="font-family: 'Montserrat', sans-serif; color: var(--primary-blue); margin-bottom:15px;">
-        Transforme Seu Sorriso com Tecnologia Digital
-    </h1>
-    <p style="font-size:18px; margin-bottom:20px;">
-        Alinhadores personalizados, confortáveis e com resultados previsíveis.
-    </p>
-    <a href="https://wa.me/5514998840772" class="hero-btn" target="_blank">Agende Agora</a>
-</div>
 
 <!-- SEÇÃO SOBRE -->
 <section class="section" id="sobre">
     <h3>Sobre a ForceAligner</h3>
-    <p>
-        A ForceAligner nasceu com o propósito de unir tecnologia, ciência e estética para transformar sorrisos.
-        Atuamos de forma presencial e online, oferecendo alinhadores odontológicos modernos, personalizados e de alta precisão, 
-        com planejamento digital avançado, conforto ao paciente e segurança ao profissional.
-    </p>
-    <p>
-        Nossos alinhadores proporcionam resultados previsíveis, com acompanhamento contínuo e atenção aos detalhes de cada caso, 
-        garantindo funcionalidade, estética e satisfação em todas as fases do tratamento.
-    </p>
-
+    <p>A ForceAligner nasceu com o propósito de unir tecnologia, ciência e estética para transformar sorrisos. Atuamos de forma presencial e online, oferecendo alinhadores odontológicos modernos, personalizados e de alta precisão, com planejamento digital avançado, conforto ao paciente e segurança ao profissional.</p>
+    <p>Nossos alinhadores proporcionam resultados previsíveis, com acompanhamento contínuo e atenção aos detalhes de cada caso, garantindo funcionalidade, estética e satisfação em todas as fases do tratamento.</p>
     <h3>Perguntas Frequentes</h3>
     <div class="services" style="grid-template-columns: repeat(2, 1fr); gap: 30px;">
         <div class="card">
@@ -255,26 +91,16 @@
     </div>
 </section>
 
-<!-- SEÇÃO SERVIÇOS COM DEPOIMENTOS HUMANIZADOS -->
+<!-- SEÇÃO SERVIÇOS -->
 <section class="section" id="servicos">
     <h3>Serviços ForceAligner</h3>
     <div class="services">
-        <!-- Paciente 1 -->
+        <!-- Pacientes -->
         <div class="card">
-            <h4>Vitoria</h4>
-            <p>"Sempre quis corrigir meu sorriso sem precisar do aparelho fixo. Os alinhadores da ForceAligner foram confortáveis e discretos, adorei o resultado!"</p>
-        </div>
-
-        <!-- Paciente 2 -->
-        <div class="card">
-            <h4>Natacha</h4>
-            <p>"O tratamento foi rápido e confortável. Pude comer normalmente e a higiene bucal ficou super fácil. Recomendo a ForceAligner!"</p>
-        </div>
-
-        <!-- Paciente 3 -->
-        <div class="card">
-            <h4>Diego</h4>
-            <p>"Achei incrível como tudo é planejado digitalmente. O acompanhamento foi ótimo e meu sorriso ficou perfeito. Valeu cada investimento!"</p>
+            <h4>Para Pacientes</h4>
+            <p><strong>Vitória:</strong> "O tratamento foi incrível! Meu sorriso mudou e tudo com muito conforto."</p>
+            <p><strong>Natacha:</strong> "Os alinhadores são discretos e fáceis de usar. Recomendo muito!"</p>
+            <p><strong>Diego:</strong> "Planejamento digital perfeito, resultado super previsível e rápido."</p>
         </div>
 
         <!-- Dentistas e Clínicas -->
@@ -286,22 +112,37 @@
     </div>
 </section>
 
+<!-- SEÇÃO CONTATO -->
+<section class="section" id="contato">
+    <h3>Contato</h3>
+    <p>Entre em contato conosco para agendar sua avaliação ou tirar dúvidas sobre nossos alinhadores.</p>
+    <div class="services" style="grid-template-columns: 1fr; max-width: 500px; margin: auto;">
+        <div class="card">
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/5514998840772" target="_blank" style="color: var(--secondary-blue); text-decoration: none;">(14) 99884-0772</a></p>
+        </div>
+        <div class="card">
+            <h4>E-mail</h4>
+            <p><a href="mailto:contato@forcealigner.com.br" style="color: var(--secondary-blue); text-decoration: none;">contato@forcealigner.com.br</a></p>
+        </div>
+    </div>
+</section>
+
 <footer>
     © 2026 ForceAligner — Todos os direitos reservados
 </footer>
 
-<!-- Botão flutuante WhatsApp -->
 <a href="https://wa.me/5514998840772" class="whatsapp-float" target="_blank">
     💬 Fale no WhatsApp
 </a>
 
-<!-- JS MENU HAMBURGER -->
 <script>
-const toggle = document.getElementById('menu-toggle');
-const nav = document.getElementById('navbar');
-toggle.addEventListener('click', () => {
-    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-});
+    // Menu hamburger mobile
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('navbar');
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
 </script>
 
 </body>
