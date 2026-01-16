@@ -27,16 +27,16 @@
 
     header p {
       color: #d0d6dc;
-      max-width: 800px;
+      max-width: 900px;
       margin: 20px auto;
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     .btn {
       display: inline-block;
       margin-top: 25px;
-      padding: 14px 30px;
+      padding: 14px 32px;
       background: #1e90ff;
       color: #ffffff;
       text-decoration: none;
@@ -56,9 +56,27 @@
       color: #0f1f2e;
     }
 
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0f1f2e;
+    }
+
     .faq p {
-      margin-bottom: 20px;
-      line-height: 1.6;
+      margin-bottom: 22px;
+      line-height: 1.7;
     }
 
     footer {
@@ -73,10 +91,9 @@
 
 <body>
 
-  <!-- TOPO / HERO -->
+  <!-- TOPO -->
   <header>
 
-    <!-- LOGO (PASTA ASSETS) -->
     <img
       src="./assets/logo.jpeg"
       alt="Force Aligner"
@@ -88,59 +105,88 @@
       "
     >
 
-    <h1>Alinhadores Odontológicos com Precisão e Tecnologia</h1>
+    <h1>Alinhadores Odontológicos com Tecnologia e Precisão</h1>
 
     <p>
-      A Force Aligner é especializada em alinhadores odontológicos modernos
-      e contenções ortodônticas, unindo tecnologia, conforto e eficiência
-      para transformar sorrisos com segurança e previsibilidade.
+      A <strong>Force Aligner</strong> é especializada em alinhadores
+      odontológicos transparentes e <strong>contenções ortodônticas</strong>,
+      oferecendo tratamentos modernos, discretos e altamente eficazes,
+      com planejamento digital e acompanhamento profissional.
     </p>
 
     <a href="https://wa.me/5514998840772" class="btn">
-      Agende sua Avaliação no WhatsApp
+      Fale Conosco no WhatsApp
     </a>
 
   </header>
 
   <!-- SOBRE -->
   <section>
-    <h2>Sobre a Force Aligner</h2>
+    <h2>Quem Somos</h2>
     <p>
-      Trabalhamos com alinhadores odontológicos transparentes e
-      contenções ortodônticas, oferecendo soluções modernas, discretas
-      e eficazes para correção do sorriso, sempre com acompanhamento profissional.
+      Trabalhamos com soluções ortodônticas modernas que unem estética,
+      conforto e eficiência. Nossos alinhadores são desenvolvidos com
+      tecnologia avançada, garantindo previsibilidade no tratamento e
+      segurança para profissionais e pacientes.
     </p>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section>
+    <h2>Nossos Serviços</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>Alinhadores Odontológicos</h3>
+        <p>
+          Correção do sorriso com alinhadores transparentes, removíveis
+          e confortáveis, indicados para diversos tipos de tratamento
+          ortodôntico.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Contenções Ortodônticas</h3>
+        <p>
+          Confeccionamos contenções ortodônticas de alta qualidade para
+          manutenção dos resultados após o tratamento.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- FAQ -->
   <section class="faq">
     <h2>Dúvidas Frequentes</h2>
 
-    <p><strong>Funciona igual ao aparelho fixo?</strong><br>
-    Sim. Os alinhadores atuam com planejamento digital preciso e são
-    indicados para diversos tipos de correção ortodôntica.</p>
+    <p><strong>Funciona igual ao fixo?</strong><br>
+    Sim. Os alinhadores utilizam planejamento digital preciso e promovem
+    movimentos ortodônticos eficazes.</p>
 
     <p><strong>Machuca menos?</strong><br>
-    Sim. Por não utilizar fios e bráquetes, o conforto é muito maior.</p>
+    Sim. Não há fios ou bráquetes, o que reduz significativamente o
+    desconforto.</p>
 
     <p><strong>É mais rápido?</strong><br>
-    Em muitos casos, o tratamento pode ser mais rápido, pois os movimentos
-    são planejados previamente.</p>
+    Em muitos casos, o tratamento é mais rápido devido ao planejamento
+    antecipado dos movimentos.</p>
 
     <p><strong>É só uma plaquinha?</strong><br>
-    Não. O tratamento envolve uma sequência de alinhadores personalizados
-    e acompanhamento profissional.</p>
+    Não. O tratamento envolve uma sequência de alinhadores personalizados.</p>
 
     <p><strong>Por que é mais caro que o fixo?</strong><br>
-    Pela tecnologia envolvida, planejamento digital, conforto e estética superior.</p>
+    Pela tecnologia envolvida, conforto, estética e previsibilidade.</p>
 
     <p><strong>Vale a pena investir?</strong><br>
-    Sim. O custo-benefício é excelente considerando conforto, estética e previsibilidade.</p>
+    Sim. O custo-benefício é excelente considerando os resultados e o
+    conforto durante o tratamento.</p>
   </section>
 
   <!-- RODAPÉ -->
   <footer>
-    © 2026 Force Aligner — Alinhadores Odontológicos e Contenções Ortodônticas
+    © 2026 Force Aligner — Alinhadores Odontológicos e Contenções Ortodônticas  
+    <br>
+    WhatsApp: (14) 99884-0772
   </footer>
 
 </body>
