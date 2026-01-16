@@ -60,7 +60,7 @@
             cursor: pointer;
         }
 
-        /* HERO COM BANNER E TEXTO */
+        /* HERO COM BANNER E TEXTO NA PARTE INFERIOR */
         .hero {
             position: relative;
             background: url('assets/banner.jpeg') no-repeat center center;
@@ -77,12 +77,15 @@
         }
         .hero-text {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             text-align: center;
             color: #fff;
             max-width: 90%;
+        }
+        .hero-text.hero-bottom {
+            top: auto;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .hero-text h1 {
             font-size: 42px;
@@ -194,7 +197,7 @@
                 height: 500px;
             }
             nav {
-                display: none; /* esconde nav no celular */
+                display: none;
                 flex-direction: column;
                 width: 100%;
                 text-align: center;
@@ -249,10 +252,10 @@
     <div id="menu-toggle">☰</div>
 </header>
 
-<!-- HERO COM BANNER E TEXTO -->
+<!-- HERO COM TEXTO NA PARTE INFERIOR -->
 <section class="hero">
     <div class="hero-overlay"></div>
-    <div class="hero-text">
+    <div class="hero-text hero-bottom">
         <h1>Transforme Seu Sorriso com Tecnologia Digital</h1>
         <p>Alinhadores personalizados, confortáveis e com resultados previsíveis.</p>
         <a href="https://wa.me/5514998840772" class="hero-btn" target="_blank">Agende Agora</a>
@@ -309,24 +312,18 @@
         <div class="card">
             <h4>Vitoria</h4>
             <p>"Sempre quis corrigir meu sorriso sem precisar do aparelho fixo. Os alinhadores da ForceAligner foram confortáveis e discretos, adorei o resultado!"</p>
-            <p><strong>👉 Agende sua avaliação no WhatsApp</strong></p>
-            <p><strong>WhatsApp:</strong> (14) 99884-0772</p>
         </div>
 
         <!-- Paciente 2 -->
         <div class="card">
             <h4>Natacha</h4>
             <p>"O tratamento foi rápido e confortável. Pude comer normalmente e a higiene bucal ficou super fácil. Recomendo a ForceAligner!"</p>
-            <p><strong>👉 Agende sua avaliação no WhatsApp</strong></p>
-            <p><strong>WhatsApp:</strong> (14) 99884-0772</p>
         </div>
 
         <!-- Paciente 3 -->
         <div class="card">
             <h4>Diego</h4>
             <p>"Achei incrível como tudo é planejado digitalmente. O acompanhamento foi ótimo e meu sorriso ficou perfeito. Valeu cada investimento!"</p>
-            <p><strong>👉 Agende sua avaliação no WhatsApp</strong></p>
-            <p><strong>WhatsApp:</strong> (14) 99884-0772</p>
         </div>
 
         <!-- Dentistas e Clínicas -->
@@ -334,7 +331,6 @@
             <h4>Para Dentistas e Clínicas</h4>
             <p>Fornecemos alinhadores e contenções ortodônticas personalizadas, produzidas com planejamento digital avançado, garantindo previsibilidade clínica e suporte especializado.</p>
             <p><strong>👉 Torne-se parceiro ForceAligner</strong></p>
-            <p><strong>E-mail:</strong> em breve</p>
         </div>
     </div>
 </section>
