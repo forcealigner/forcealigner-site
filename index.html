@@ -29,17 +29,12 @@
             text-decoration: underline;
         }
 
-        /* HERO SIMPLIFICADA */
+        /* HERO SIMPLIFICADA SEM TEXTO */
         .hero {
             position: relative;
             background: url('assets/banner.jpeg') no-repeat center center;
             background-size: cover;
             height: 600px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
         }
         .hero-overlay {
             position: absolute;
@@ -47,35 +42,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(11,28,45,0.4); /* overlay mais claro */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 20px;
-        }
-        .hero-content {
-            max-width: 700px;
-        }
-        .hero h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        .hero button {
-            padding: 15px 30px;
-            font-size: 16px;
-            background: #1e90ff;
-            border: none;
-            color: #fff;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .hero button:hover {
-            background: #1c7ed6;
+            background: rgba(11,28,45,0.3); /* overlay suave */
         }
 
         .section {
@@ -86,6 +53,12 @@
         .section h3 {
             font-size: 32px;
             margin-bottom: 20px;
+            text-align: center;
+        }
+        .section p {
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto 30px auto;
             text-align: center;
         }
         .services {
@@ -131,10 +104,10 @@
 
         /* RESPONSIVIDADE */
         @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 32px;
+            .section h3 {
+                font-size: 28px;
             }
-            .hero p {
+            .section p {
                 font-size: 16px;
             }
             .hero {
@@ -142,10 +115,10 @@
             }
         }
         @media (max-width: 480px) {
-            .hero h2 {
-                font-size: 26px;
+            .section h3 {
+                font-size: 24px;
             }
-            .hero p {
+            .section p {
                 font-size: 14px;
             }
             .hero {
@@ -169,40 +142,37 @@
     </nav>
 </header>
 
+<!-- HERO COM BANNER SOMENTE -->
 <section class="hero">
-    <div class="hero-overlay">
-        <div class="hero-content">
-            <h2>Alinhadores Odontológicos com Precisão e Tecnologia</h2>
-            <p>A Force Aligner é especializada em alinhadores odontológicos modernos e contenções ortodônticas, unindo tecnologia, conforto e eficiência para transformar sorrisos com segurança, previsibilidade e acompanhamento profissional.</p>
-            <a href="https://wa.me/5514998840772" target="_blank">
-                <button>Agende sua Avaliação no WhatsApp</button>
-            </a>
-        </div>
-    </div>
+    <div class="hero-overlay"></div>
 </section>
 
-<!-- SEÇÃO SOBRE + PERGUNTAS FREQUENTES -->
+<!-- SEÇÃO SOBRE COM INFORMAÇÕES E PERGUNTAS FREQUENTES -->
 <section class="section" id="sobre">
     <h3>Sobre a Force Aligner</h3>
-    <p style="max-width:900px;margin:auto;text-align:center;font-size:18px;">
+    <p>
         A Force Aligner nasceu com o propósito de unir tecnologia, ciência e estética para transformar sorrisos.
-        Atuamos de forma presencial e online, oferecendo alinhadores odontológicos de alta precisão por meio de
-        planejamento digital avançado, com previsibilidade clínica, conforto ao paciente e segurança ao profissional.
+        Atuamos de forma presencial e online, oferecendo alinhadores odontológicos modernos, personalizados e de alta precisão, 
+        com planejamento digital avançado, conforto ao paciente e segurança ao profissional.
+    </p>
+    <p>
+        Nossos alinhadores proporcionam resultados previsíveis, com acompanhamento contínuo e atenção aos detalhes de cada caso, 
+        garantindo funcionalidade, estética e satisfação em todas as fases do tratamento.
     </p>
 
     <h3>Perguntas Frequentes</h3>
     <div class="services">
         <div class="card">
             <h4>Funciona igual o fixo?</h4>
-            <p>Sim. Os alinhadores Force Aligner seguem os mesmos princípios ortodônticos do aparelho fixo, mas com planejamento digital detalhado. Isso permite movimentações mais precisas, previsíveis e confortáveis, sempre com acompanhamento profissional.</p>
+            <p>Sim. Os alinhadores Force Aligner seguem os mesmos princípios ortodônticos do aparelho fixo, mas com planejamento digital detalhado. Movimentações precisas, previsíveis e confortáveis, sempre com acompanhamento profissional.</p>
         </div>
         <div class="card">
             <h4>Machuca menos?</h4>
-            <p>Sim. Por serem removíveis e não possuírem fios ou bráquetes, os alinhadores causam menos desconforto e irritações na boca, facilitando a adaptação e a higiene bucal durante o tratamento.</p>
+            <p>Sim. Por serem removíveis e não possuírem fios ou bráquetes, causam menos desconforto e irritações, facilitando adaptação e higiene bucal durante o tratamento.</p>
         </div>
         <div class="card">
             <h4>É mais rápido?</h4>
-            <p>Em muitos casos, o tratamento pode ser mais rápido ou equivalente ao aparelho fixo tradicional, pois o planejamento digital permite movimentações controladas e eficientes, garantindo resultados precisos.</p>
+            <p>Em muitos casos, o tratamento pode ser mais rápido ou equivalente ao aparelho fixo tradicional, graças ao planejamento digital que garante movimentações controladas e eficientes.</p>
         </div>
         <div class="card">
             <h4>É só uma plaquinha?</h4>
@@ -215,7 +185,7 @@
     </div>
 </section>
 
-<!-- SEÇÃO PARA PACIENTES / DENTISTAS (SERVIÇOS) -->
+<!-- SEÇÃO PARA PACIENTES / DENTISTAS -->
 <section class="section">
     <h3>Para Quem é a Force Aligner</h3>
     <div class="services">
