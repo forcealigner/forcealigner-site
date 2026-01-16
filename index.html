@@ -33,12 +33,33 @@
         nav a:hover {
             text-decoration: underline;
         }
+
+        /* HERO MODERNA */
         .hero {
-            background: linear-gradient(rgba(11,28,45,0.85), rgba(11,28,45,0.85)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') no-repeat center center;
+            position: relative;
+            background: url('assets/banner.jpg') no-repeat center center;
             background-size: cover;
-            color: #fff;
-            padding: 100px 40px;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            color: #fff;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11,28,45,0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        .hero-content {
+            max-width: 700px;
         }
         .hero h2 {
             font-size: 42px;
@@ -46,8 +67,7 @@
         }
         .hero p {
             font-size: 18px;
-            max-width: 700px;
-            margin: 0 auto 30px;
+            margin-bottom: 30px;
         }
         .hero button {
             padding: 15px 30px;
@@ -57,10 +77,12 @@
             color: #fff;
             cursor: pointer;
             border-radius: 5px;
+            transition: background 0.3s;
         }
         .hero button:hover {
             background: #1c7ed6;
         }
+
         .section {
             padding: 60px 40px;
             max-width: 1100px;
@@ -110,8 +132,28 @@
             background-color: #1ebe5d;
         }
 
-        /* Responsividade para WhatsApp flutuante */
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .hero {
+                height: 500px;
+            }
+        }
         @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 26px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
+            .hero {
+                height: 400px;
+            }
             .whatsapp-float {
                 padding: 10px 15px;
                 font-size: 14px;
@@ -122,7 +164,7 @@
 <body>
 
 <header>
-    <img src="assets/logo.jpeg" alt="Force Aligner Logo" class="logo">
+    <img src="assets/logo.png" alt="Force Aligner Logo" class="logo">
     <nav>
         <a href="#">Início</a>
         <a href="#">Sobre</a>
@@ -132,13 +174,18 @@
 </header>
 
 <section class="hero">
-    <h2>Alinhadores Odontológicos com Precisão e Tecnologia</h2>
-    <p>A Force Aligner é especializada em alinhadores odontológicos modernos e contenções ortodônticas, unindo tecnologia, conforto e eficiência para transformar sorrisos com segurança, previsibilidade e acompanhamento profissional.</p>
-    <a href="https://wa.me/5514998840772" target="_blank">
-        <button>Agende sua Avaliação no WhatsApp</button>
-    </a>
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h2>Alinhadores Odontológicos com Precisão e Tecnologia</h2>
+            <p>A Force Aligner é especializada em alinhadores odontológicos modernos e contenções ortodônticas, unindo tecnologia, conforto e eficiência para transformar sorrisos com segurança, previsibilidade e acompanhamento profissional.</p>
+            <a href="https://wa.me/5514998840772" target="_blank">
+                <button>Agende sua Avaliação no WhatsApp</button>
+            </a>
+        </div>
+    </div>
 </section>
 
+<!-- SEÇÕES DO SITE (mantidas iguais) -->
 <section class="section">
     <h3>Para Quem é a Force Aligner</h3>
     <div class="services">
